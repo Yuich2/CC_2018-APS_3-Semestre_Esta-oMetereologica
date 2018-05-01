@@ -1,0 +1,58 @@
+body{
+
+	background-color : #00A2E8;
+
+}
+
+
+.cabecalho{
+
+	margin: -8px 0 0 -8px;
+	position: fixed;
+
+}
+
+h1{
+
+	text-align: center;
+
+}
+
+.cont{
+
+	min-height: 10px;
+	max-height: 25%;
+	background-color: #00A2E8;
+	margin: -13px -8px 0 -8px;
+	color: white;
+	font-family: arial;
+
+}
+
+.in, .atual, .qs{
+	
+	min-height: 10px;
+	max-height: 25%;
+	background-color: #00A2E8;
+	margin: -13px -8px 0 -8px;
+	color: white;
+	font-family: arial;
+	text-align: center;
+
+}
+
+.in p, .atual p, .qs p, .cont p{
+
+	display:block;
+	font-size: 18px;
+	margin: 10px 30px;
+
+}
+
+.in a, .atual a, .qs a, .cont a{
+
+	display: block;
+	padding-top: 100px;
+
+}
+
