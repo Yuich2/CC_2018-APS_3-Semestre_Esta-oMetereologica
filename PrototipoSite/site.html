@@ -93,23 +93,32 @@
 
 <script>
 
-	if(window.XMLHttpRequest)
-	{
+function loadXMLSync(url) {
+  	try {
+    	// Prefer XMLHttpRequest when available
+    	xmlhttp = new XMLHttpRequest()
+    	xmlhttp.open('GET', url, false)
+    	xmlhttp.setRequestHeader('Content-Type', 'text/xml')
+    	xmlhttp.send()
 
-		xmlhttp = new XMLHttpRequest();
+    	return xmlhttp.responseXML
+  	}
+  	catch (e) {
+    		// XMLHttpRequest not available, fallback on ActiveXObject
+   		try {
+      			var activex = new ActiveXObject('Microsoft.XMLDOM')
+      			activex.async = false
+      			activex.load(url)
 
-	}
-	
-	else
-	{
-
-		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-
-	}
-
-	xmlhttp.open( "GET", "data.xml", false);
-	xmlhttp.send();
-	xmlDoc = xmlhttp.responseXML;
+      			return activex
+    		}
+    		catch (e) {
+      		// Neither XMLHttpRequest or ActiveXObject are available
+      		return undefined
+    		}
+  	}
+}
+	xmlDoc = loadXMLSync("data.xml")
 	
 	document.getElementById("celsius0").innerHTML = xmlDoc.getElementsByTagName("celsius0")[0].childNodes[0].nodeValue;
 	document.getElementById("fahrenheit0").innerHTML = xmlDoc.getElementsByTagName("fahrenheit0")[0].childNodes[0].nodeValue;
