@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding = "UTF-8"?> 
+<data>
+
+	<celsius0> 25 </celsius0>
+<fahrenheit0>86.6</fahrenheit0>
+<humidity0>85.5</humidity0>
+<chuva0>Sem Chuva</chuva0>
+
+	<celsius1> 0 </celsius1>
+<fahrenheit1>0.0</fahrenheit1>
+<humidity1>0.0</humidity1>
+<chuva1>Com Chuva</chuva1>
+
+	<celsius2> 1 </celsius2>
+<fahrenheit2>0.0</fahrenheit2>
+<humidity2>0.0</humidity2>
+<chuva2>Com Chuva</chuva2>
+
+	<celsius3> 2 </celsius3>
+<fahrenheit3>0.0</fahrenheit3>
+<humidity3>0.0</humidity3>
+<chuva3>Com Chuva</chuva3>
+
+	<celsius4> 3 </celsius4>
+<fahrenheit4>0.0</fahrenheit4>
+<humidity4>0.0</humidity4>
+<chuva4>Com Chuva</chuva4>
+
+	<celsius5> 4 </celsius5>
+<fahrenheit5>0.0</fahrenheit5>
+<humidity5>0.0</humidity5>
+<chuva5>Com Chuva</chuva5>
+
+	<celsius6> 5 </celsius6>
+<fahrenheit6>0.0</fahrenheit6>
+<humidity6>0.0</humidity6>
+<chuva6>Com Chuva</chuva6>
+
+	<celsius7> 6 </celsius7>
+<fahrenheit7>0.0</fahrenheit7>
+<humidity7>0.0</humidity7>
+<chuva7>Com Chuva</chuva7>
+
+	<celsius8> 7 </celsius8>
+<fahrenheit8>0.0</fahrenheit8>
+<humidity8>0.0</humidity8>
+<chuva8>Com Chuva</chuva8>
+
+	<celsius9> 8 </celsius9>
+<fahrenheit9>0.0</fahrenheit9>
+<humidity9>0.0</humidity9>
+<chuva9>Com Chuva</chuva9>
+
+	<celsius10> 9 </celsius10>
+<fahrenheit10>0.0</fahrenheit10>
+<humidity10>0.0</humidity10>
+<chuva10>Com Chuva</chuva10>
+
+</data>

@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Previsão do Tempo</title>
+	<link rel="icon" href="imagens/favicon.png" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="css/estrutura.css">
+	<link rel="stylesheet" type="text/css" href="css/imagens.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+
+</head>
+<body>
+
+	<nav id="menu">
+    	<ul style="padding-top:13px;">
+		<li><a href="site.html">Estado atual</a></li>
+        	<li><a href="contato.html">Contato</a></li>
+    	</ul>
+	</nav>
+
+<!-- Espaço para conteúdo -->
+
+	<div class="atual">
+
+		<a name="atual"></a>
+		<br/>
+		<h2><span id="celsius0"></span>° C</h2>
+		<p><span id="fahrenheit0"></span>° F</p>
+		<h1> Humidade: <span id="humidity0"></span>% </h1>
+		<p><span id="chuva0"></span></p>
+	</div>
+
+	</br>
+
+	<div class="table">
+	
+		<a name="tabela"></a>
+
+		<div class="tableContent1">
+
+			<p><span id="celsius1"></span>°C <br/><span id="fahrenheit1"></span>°F <br/> <span id="humidity1"></span>%<br/><span id="chuva1"></span><br/> 1min </p>
+					
+		</div>
+		<div class="tableContent">
+
+			<p><span id="celsius2"></span>°C <br/><span id="fahrenheit2"></span>°F <br/> <span id="humidity2"></span>%<br/><span id="chuva2"></span><br/> 2min </p>
+				
+		</div>
+		<div class="tableContent">
+
+			<p><span id="celsius3"></span>°C <br/><span id="fahrenheit3"></span>°F <br/> <span id="humidity3"></span>%<br/><span id="chuva3"></span><br/> 3min </p>
+				
+		</div>
+		<div class="tableContent">
+
+			<p><span id="celsius4"></span>°C <br/><span id="fahrenheit4"></span>°F <br/> <span id="humidity4"></span>%<br/><span id="chuva4"></span><br/> 4min </p>
+				
+		</div>
+		<div class="tableContent">
+
+			<p><span id="celsius5"></span>°C <br/><span id="fahrenheit5"></span>°F <br/> <span id="humidity5"></span>%<br/><span id="chuva5"></span><br/> 5min </p>
+				
+		</div>
+		<div class="tableContent">
+
+			<p><span id="celsius6"></span>°C <br/><span id="fahrenheit6"></span>°F <br/> <span id="humidity6"></span>%<br/><span id="chuva6"></span><br/> 6min </p>
+
+		</div>
+		<div class="tableContent">
+
+			<p><span id="celsius7"></span>°C <br/><span id="fahrenheit7"></span>°F <br/> <span id="humidity7"></span>%<br/><span id="chuva7"></span><br/> 7min </p>
+				
+		</div>
+		<div class="tableContent">
+
+			<p><span id="celsius8"></span>°C <br/><span id="fahrenheit8"></span>°F <br/> <span id="humidity8"></span>%<br/><span id="chuva8"></span><br/> 8min </p>
+				
+		</div>
+		<div class="tableContent">
+
+			<p><span id="celsius9"></span>°C <br/><span id="fahrenheit9"></span>°F <br/> <span id="humidity9"></span>%<br/><span id="chuva9"></span><br/> 9min </p>
+				
+		</div>
+		<div class="tableContentLast">
+
+			<p><span id="celsius10"></span>°C <br/><span id="fahrenheit10"></span>°F <br/> <span id="humidity10"></span>%<br/><span id="chuva10"></span><br/> 10min </p>
+				
+		</div>
+
+		<br/>
+	
+	</div>
+
+<script>
+
+	if(window.XMLHttpRequest)
+	{
+
+		xmlhttp = new XMLHttpRequest();
+
+	}
+	
+	else
+	{
+
+		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+
+	}
+
+	xmlhttp.open( "GET", "data.xml", false);
+	xmlhttp.send();
+	xmlDoc = xmlhttp.responseXML;
+	
+	document.getElementById("celsius0").innerHTML = xmlDoc.getElementsByTagName("celsius0")[0].childNodes[0].nodeValue;
+	document.getElementById("fahrenheit0").innerHTML = xmlDoc.getElementsByTagName("fahrenheit0")[0].childNodes[0].nodeValue;
+	document.getElementById("humidity0").innerHTML = xmlDoc.getElementsByTagName("humidity0")[0].childNodes[0].nodeValue;	
+	document.getElementById("chuva0").innerHTML = xmlDoc.getElementsByTagName("chuva0")[0].childNodes[0].nodeValue;
+
+	document.getElementById("celsius1").innerHTML = xmlDoc.getElementsByTagName("celsius1")[0].childNodes[0].nodeValue;
+	document.getElementById("fahrenheit1").innerHTML = xmlDoc.getElementsByTagName("fahrenheit1")[0].childNodes[0].nodeValue;
+	document.getElementById("humidity1").innerHTML = xmlDoc.getElementsByTagName("humidity1")[0].childNodes[0].nodeValue;	
+	document.getElementById("chuva1").innerHTML = xmlDoc.getElementsByTagName("chuva1")[0].childNodes[0].nodeValue;
+
+	document.getElementById("celsius2").innerHTML = xmlDoc.getElementsByTagName("celsius2")[0].childNodes[0].nodeValue;
+	document.getElementById("fahrenheit2").innerHTML = xmlDoc.getElementsByTagName("fahrenheit2")[0].childNodes[0].nodeValue;
+	document.getElementById("humidity2").innerHTML = xmlDoc.getElementsByTagName("humidity2")[0].childNodes[0].nodeValue;	
+	document.getElementById("chuva2").innerHTML = xmlDoc.getElementsByTagName("chuva2")[0].childNodes[0].nodeValue;
+
+	document.getElementById("celsius3").innerHTML = xmlDoc.getElementsByTagName("celsius3")[0].childNodes[0].nodeValue;
+	document.getElementById("fahrenheit3").innerHTML = xmlDoc.getElementsByTagName("fahrenheit3")[0].childNodes[0].nodeValue;
+	document.getElementById("humidity3").innerHTML = xmlDoc.getElementsByTagName("humidity3")[0].childNodes[0].nodeValue;	
+	document.getElementById("chuva3").innerHTML = xmlDoc.getElementsByTagName("chuva3")[0].childNodes[0].nodeValue;
+
+	document.getElementById("celsius4").innerHTML = xmlDoc.getElementsByTagName("celsius4")[0].childNodes[0].nodeValue;
+	document.getElementById("fahrenheit4").innerHTML = xmlDoc.getElementsByTagName("fahrenheit4")[0].childNodes[0].nodeValue;
+	document.getElementById("humidity4").innerHTML = xmlDoc.getElementsByTagName("humidity4")[0].childNodes[0].nodeValue;	
+	document.getElementById("chuva4").innerHTML = xmlDoc.getElementsByTagName("chuva4")[0].childNodes[0].nodeValue;
+
+	document.getElementById("celsius5").innerHTML = xmlDoc.getElementsByTagName("celsius5")[0].childNodes[0].nodeValue;
+	document.getElementById("fahrenheit5").innerHTML = xmlDoc.getElementsByTagName("fahrenheit5")[0].childNodes[0].nodeValue;
+	document.getElementById("humidity5").innerHTML = xmlDoc.getElementsByTagName("humidity5")[0].childNodes[0].nodeValue;	
+	document.getElementById("chuva5").innerHTML = xmlDoc.getElementsByTagName("chuva5")[0].childNodes[0].nodeValue;
+
+	document.getElementById("celsius6").innerHTML = xmlDoc.getElementsByTagName("celsius6")[0].childNodes[0].nodeValue;
+	document.getElementById("fahrenheit6").innerHTML = xmlDoc.getElementsByTagName("fahrenheit6")[0].childNodes[0].nodeValue;
+	document.getElementById("humidity6").innerHTML = xmlDoc.getElementsByTagName("humidity6")[0].childNodes[0].nodeValue;	
+	document.getElementById("chuva6").innerHTML = xmlDoc.getElementsByTagName("chuva6")[0].childNodes[0].nodeValue;
+
+	document.getElementById("celsius7").innerHTML = xmlDoc.getElementsByTagName("celsius7")[0].childNodes[0].nodeValue;
+	document.getElementById("fahrenheit7").innerHTML = xmlDoc.getElementsByTagName("fahrenheit7")[0].childNodes[0].nodeValue;
+	document.getElementById("humidity7").innerHTML = xmlDoc.getElementsByTagName("humidity7")[0].childNodes[0].nodeValue;	
+	document.getElementById("chuva7").innerHTML = xmlDoc.getElementsByTagName("chuva7")[0].childNodes[0].nodeValue;
+
+	document.getElementById("celsius8").innerHTML = xmlDoc.getElementsByTagName("celsius8")[0].childNodes[0].nodeValue;
+	document.getElementById("fahrenheit8").innerHTML = xmlDoc.getElementsByTagName("fahrenheit8")[0].childNodes[0].nodeValue;
+	document.getElementById("humidity8").innerHTML = xmlDoc.getElementsByTagName("humidity8")[0].childNodes[0].nodeValue;	
+	document.getElementById("chuva8").innerHTML = xmlDoc.getElementsByTagName("chuva8")[0].childNodes[0].nodeValue;
+
+	document.getElementById("celsius9").innerHTML = xmlDoc.getElementsByTagName("celsius9")[0].childNodes[0].nodeValue;
+	document.getElementById("fahrenheit9").innerHTML = xmlDoc.getElementsByTagName("fahrenheit9")[0].childNodes[0].nodeValue;
+	document.getElementById("humidity9").innerHTML = xmlDoc.getElementsByTagName("humidity9")[0].childNodes[0].nodeValue;	
+	document.getElementById("chuva9").innerHTML = xmlDoc.getElementsByTagName("chuva9")[0].childNodes[0].nodeValue;
+
+	document.getElementById("celsius10").innerHTML = xmlDoc.getElementsByTagName("celsius10")[0].childNodes[0].nodeValue;
+	document.getElementById("fahrenheit10").innerHTML = xmlDoc.getElementsByTagName("fahrenheit10")[0].childNodes[0].nodeValue;
+	document.getElementById("humidity10").innerHTML = xmlDoc.getElementsByTagName("humidity10")[0].childNodes[0].nodeValue;	
+	document.getElementById("chuva10").innerHTML = xmlDoc.getElementsByTagName("chuva10")[0].childNodes[0].nodeValue;
+
+	
+</script>
+	<div class="logos">
+
+		<img class="logounip" src="imagens/uniplogo.png">
+    		<img class="cc" src="imagens/cc.png">
+
+	</div>
+
+
+</body>
+</html>

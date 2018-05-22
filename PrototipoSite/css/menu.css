@@ -1,0 +1,39 @@
+
+#menu ul{
+
+	display: table;	
+	margin-top: -13px;
+	margin-left: -45px;
+	height: 40px;
+	width: 100%;
+    	position: fixed;
+	font-family:SamsungSans-Thinimport;
+   	font-size: 20px;
+	font-weight:bold;
+
+}
+
+#menu ul li{
+
+	background-color: rgba(255, 255, 255, 0.4);
+	list-style-type: none;
+	text-align:center;
+	width:40%;
+	padding-top: 10px;	
+	display: table-cell;
+
+}
+
+#menu ul li a{
+
+	text-decoration: none;
+	color: white;;
+
+}
+
+#menu ul li a:hover{
+
+	color: #bcdfdf;
+
+}
+

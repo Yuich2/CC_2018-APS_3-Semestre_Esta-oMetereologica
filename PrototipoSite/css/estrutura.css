@@ -1,0 +1,132 @@
+@font-face
+{
+
+	font-family:SamsungSans-Thinimport;
+	src:url("SamsungSans-Thin.ttf");
+
+}
+
+html{
+	height:125%;
+
+}
+
+body{
+
+	height: 100%;
+	background: linear-gradient(#000264 ,#0026a9 ,#006dff );
+	background-repeat: round;
+}
+
+//divs
+.cont{
+	padding-top: 60px;
+	font-family:SamsungSans-Thinimport;
+
+}
+.atual{
+
+	padding-top: 60px;
+
+}
+
+.table, .atual, .qs{
+	
+	margin: -13px -8px 0 -8px;
+	color: white;
+	font-family:SamsungSans-Thinimport;
+	text-align: center;
+	display:block;
+
+}
+
+.table{
+	
+	width: 85vw;
+    	white-space: nowrap;
+    	position: relative;
+   	overflow-x: auto;
+	overflow-y: hidden;
+    	-webkit-overflow-scrolling: touch;
+	height: 160px;
+	margin-left:7vw;
+
+}
+
+.tableContent{
+	
+	height: 95%;
+	border-style: hidden solid hidden hidden;
+	border-width: 2px;
+	border-color: rgba(255 ,255 ,255 , 0.5);
+	display: inline-block;
+	float: none;
+	text-align: center;
+
+}
+
+.tableContent1{
+
+	height: 95%;
+	border-style: hidden solid hidden hidden;
+	border-width: 2px;
+	border-color: rgba(255 ,255,255 , 0.5);
+	display: inline-block;
+	float: none;
+	text-align: center;
+
+}
+
+.tableContentLast{
+
+	height: 100%;
+	border-style: hidden;
+	display: inline-block;
+	float: none;
+	text-align: center;
+
+}
+
+
+h1{
+
+	color: white;
+	text-align: center;
+	font-family:SamsungSans-Thinimport;
+
+}
+
+.atual h2{
+
+	display:block;
+	font-size:15vh;
+	margin: 10px 30px;
+	font-family:SamsungSans-Thinimport;
+
+}
+
+.atual p{
+
+	display:block;
+	font-size: 18px;
+	margin: 10px 30px;
+	font-family:SamsungSans-Thinimport;
+
+}
+
+.table p, .qs p, .cont p{
+
+	display:block;
+	color: white;
+	text-align: center;
+	font-size: 18px;
+	margin: 10px 30px;
+	font-family:SamsungSans-Thinimport;
+}
+
+.table a, .atual a, .qs a, .cont a{
+
+	display: block;
+
+}
+
